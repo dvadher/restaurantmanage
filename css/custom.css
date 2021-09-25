@@ -654,6 +654,7 @@ span.cart-count {
     color: #fff;
     padding: 5px;
     border-radius: 30px;
+    font-size: 10px;
 }
 .location-header p i:before{
     color: #fff; 
