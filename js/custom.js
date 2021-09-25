@@ -52,10 +52,11 @@ $(document).ready(function () {
         loop:true,        
         nav:false, 
         margin:10,
+        dot:false,
         center: true,      
         responsive:{
             0:{
-                items:3
+                items:4
             },
             600:{
                 items:6
@@ -70,7 +71,8 @@ $(document).ready(function () {
     $('.recommend-slide').owlCarousel({
         loop:true,        
         nav:false, 
-        margin:20,
+        margin:15,
+        dot:false,
         center: true,      
         responsive:{
             0:{

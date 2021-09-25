@@ -1,5 +1,4 @@
 /*================================= comoon css =================================*/
-/* https://codepen.io/athimannil/pen/MaXxwv */
 body {
 	font-family: 'Poppins' !important;
 	touch-action: manipulation;
@@ -180,21 +179,25 @@ h1, h1 span {
     font-weight: 700 !important;
 }
 .h2, h2 {
-    font-size: 2rem;
+    font-size: 20px;
 }
 .item-popup-detail h2 {
     font-size: 20px;
     color: #000;
+    font-weight: 500;
 }
 h3 {
-	font-size: 18px;
-    color: #3f3849;
+    font-size: 17px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 0;
 }
 .i-blue:before {
     font-size: 25px;
 }
 h5 {
     font-size: 1.25rem;
+    font-weight: 500;
 }
 .h6, h6 {
     font-size: 1rem;
@@ -235,7 +238,7 @@ label {
     background-size: 20px 1px;
 }
 .search-result-header input, .search-result-header input:focus {
-    background: #f3f5f9;
+    background: #f5f5f5;
 	padding: 0px 50px 0px 20px;
     height: 50px;
     border-radius: .7em;
@@ -269,7 +272,7 @@ label {
     padding: 0 !important;
 }
 .food-top-slide-content img {
-    /* height: 84px; */
+    height: 84px;
     object-fit: cover;
     object-position: center;
     border-radius: .4rem;
@@ -334,7 +337,8 @@ button.back-btn {
 .item-badge-v1, .item-badge-v2{
     position: relative;
     color: #fafafa;
-    font-size: .6rem;
+    font-size: 9px;
+    line-height: unset;
     padding: .25rem .4rem;
     text-transform: none;
     font-weight: 600;
@@ -440,6 +444,7 @@ button.btn-marun {
     white-space: nowrap;
     text-overflow: ellipsis;
     max-width: 100px;
+    margin-bottom: 0;
 }
 .section-recommend-slide .normal-content .row {
     margin: 0;
@@ -548,7 +553,7 @@ button.back-btn.item-popup-back-btn i:before {
 }
 /* z index sequence */
 .modal.item-popup {
-    z-index: 99999999999999999;
+    z-index: 9999;
 }
 .modal.modal-z {
     z-index: 99999;
@@ -592,6 +597,32 @@ span.btn.btn-new-v2{
     height: 38px !important;
     display: flex;
     align-items: center;
+}
+price {
+    font-family: 'Poppins' !important;
+    font-weight: 500;
+    color: #000 !important;
+}
+label {
+    margin: 0 0 2px;
+    color: #000;
+}
+.footer-content a {
+    font-weight: 500;
+}
+.owl-dots {
+    display: none;
+}
+section.section-recommend {
+    padding: 40px 0px;
+}
+section.food-top-slider {
+    padding-top: 30px;
+}
+a.recommend-slide-content img {
+    height: 135px;
+    object-fit: cover;
+    object-position: center;
 }
 /*================================= custom css start =================================*/
 
