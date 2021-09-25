@@ -6,6 +6,9 @@ body {
 	font-size: 13px;
 	background-color: #fff;
 }
+p{
+    margin-bottom:0;
+}
 .modal-dialog{
     max-width: 100%;
 }
@@ -135,9 +138,9 @@ textarea:focus {
 	background: transparent
 }
 form label {
-	font-size: 16px;
-	display: block;
-	margin-bottom: 10px;
+	font-size: 13px;
+    display: block;
+    margin-bottom: 0;
 }
 input:required {
 	box-shadow: none
@@ -167,8 +170,8 @@ a:hover, button, button:hover {
 p,
 span {
 	font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 13px;
+    line-height: 20px;
 }
 h1, h1 span {
 	font-size: 50px !important;
@@ -179,16 +182,16 @@ h1, h1 span {
 .h2, h2 {
     font-size: 2rem;
 }
-
+.item-popup-detail h2 {
+    font-size: 20px;
+    color: #000;
+}
 h3 {
 	font-size: 18px;
     color: #3f3849;
 }
 .i-blue:before {
     font-size: 25px;
-}
-h4{
-	font-size:28px;
 }
 h5 {
     font-size: 1.25rem;
@@ -218,7 +221,7 @@ label {
     font-size: 14px;
 }
 .text-black{
-	color:#151515
+	color:#000
 }
 .bg-black{
 	background-color:#151515;
@@ -305,8 +308,11 @@ span.label-slide {
 .modal-content{
 	height: 100vh;
 }
-.item-listing .modal-content{
+.item-listing .modal-content, .red-bg, .red-bg1{
 	background-color: #bc2c3d;	
+}
+.footer-content a:focus{
+    color:#bc2c3d !important;  
 }
 .item-listing .modal-footer{
 	justify-content: flex-start;
@@ -428,6 +434,164 @@ button.btn-marun {
 }
 .customize {
     z-index: 9999;
+}
+.text-hidden {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100px;
+}
+.section-recommend-slide .normal-content .row {
+    margin: 0;
+}
+p.item-badge-v1.d-block {
+    float: right;
+    line-height: normal;
+}
+a.recommend-slide-content img {
+    border-radius: 8px;
+}
+.add-notification {
+    position: fixed;
+    top: 10px;
+    right: 0;
+    width: 80%;
+    background: #fff;
+    border-top: 2px solid #d53d4c !important;
+    border: 1px solid #e1e1e1;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(150%);
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+.item-close-btn {
+    position: absolute;
+    top: 10px;
+    z-index: 9999;
+    right: 20px;
+    font-size: 20px;
+    color: #fff;
+    background: #d53d4c;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    padding-top: 1px;
+}
+.item-added-popup .add-notification{
+    transform: translateX(0%);
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+button.back-btn.item-popup-back-btn {
+    color: #000;
+}
+button.back-btn.item-popup-back-btn i:before {
+    margin-right: 10px !important;
+    color: #dc3545;
+    font-size: 19px;
+}
+.badge {
+    font-size: 11px;
+    padding: 7px 9px;
+    font-weight: 500;
+}
+.badge-danger {
+    color: #ff6000;
+    background-color: rgb(255 96 0/15%);
+}
+.badge-success {
+    color: #28a745;
+    background-color: rgb(40 167 69/15%);
+}
+.item-detail {
+    background: #fff;
+    position: relative;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+}
+.header-bg {
+    background-color: #f5f5f5;
+}
+.item-popup-detail {
+    position: relative;
+    z-index: 9;
+}
+.item-detail:before {
+    content: "";
+    background: #fff;
+    position: absolute;
+    top: -32px;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+}
+.item-detail {
+    padding-top: 0 !important;
+}
+.item-popup .item-listing-block{
+    margin-bottom: 20px;
+}
+.item-popup .modal-btn-row i:before {
+    font-size: 24px !important;
+}
+/* z index sequence */
+.modal.item-popup {
+    z-index: 99999999999999999;
+}
+.modal.modal-z {
+    z-index: 99999;
+}
+/* z index sequence */
+.bg-green{
+    background: #60b246;
+}
+.cart-flex-item i {
+    position: relative;
+    top: 7px;
+    margin-right: 10px;
+}
+.cart-block {
+    background: #fff;
+    margin: 0px 15px;
+    border-radius: 15px;
+}
+.cart-listing-block, .cart-form{
+    padding: 15px;
+}
+.modal-body.cart {
+    margin-bottom: 50px;
+    overflow: scroll;
+}
+select.form-control {
+    font-size: 13px !important;
+    border: none;
+    border-bottom: 1px solid #e1e1e1;
+    border-radius: 0;
+}
+.sub-total-listing {
+    padding: 15px;
+}
+span.btn.btn-new-v2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.s-item price {
+    height: 38px !important;
+    display: flex;
+    align-items: center;
 }
 /*================================= custom css start =================================*/
 

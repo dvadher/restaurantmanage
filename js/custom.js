@@ -1,4 +1,12 @@
 $(document).ready(function () {
+    $(document).on('click','.item-added', function(){
+        $('.item-add').addClass('item-added-popup');
+    });
+    $(document).on('click','.item-close-btn', function(){
+        $('.item-add').removeClass('item-added-popup');
+    });  
+
+
     /*====================== js for sticky and mobile menu ====================== */
     var min_height = $(window).height() - ($(".custom-header").height() + $(".custom-footer").height());
     $(".main_page").css('min-height', min_height + 'px');
@@ -57,6 +65,26 @@ $(document).ready(function () {
             }
         }
     });
+
+
+    $('.recommend-slide').owlCarousel({
+        loop:true,        
+        nav:false, 
+        margin:20,
+        center: true,      
+        responsive:{
+            0:{
+                items:2
+            },
+            600:{
+                items:6
+            },
+            1000:{
+                items:6
+            }
+        }
+    });
+
 
     $('#qty_input').prop('disabled', true);
     $('#plus-btn').click(function(){
