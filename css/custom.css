@@ -652,12 +652,12 @@ span.cart-count {
     width: fit-content;
     background: #d53d4c;
     color: #fff;
-    padding: 5px;
+    padding: 5px 10px;
     border-radius: 30px;
     font-size: 10px;
 }
-.location-header p i:before{
-    color: #fff; 
+.location-header p i:before, .text-white, .cart price{
+    color: #fff !important; 
 }
 /*================================= custom css start =================================*/
 
