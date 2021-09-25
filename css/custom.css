@@ -233,7 +233,7 @@ label {
 	color:#dc3545;
 }
 .custom-header {
-    padding: 30px 0px 15px;
+    padding: 20px 0px 16px;
     border-bottom: 1px dashed #e1e1e1;
     background-size: 20px 1px;
 }
@@ -588,7 +588,7 @@ select.form-control {
 .sub-total-listing {
     padding: 15px;
 }
-span.btn.btn-new-v2{
+span.btn.btn-new-v2, .aub-quantity{
     position: absolute;
     bottom: 0;
     right: 0;
@@ -623,6 +623,40 @@ a.recommend-slide-content img {
     height: 135px;
     object-fit: cover;
     object-position: center;
+}
+span.cart-count {
+    background: #d53d4c;
+    width: 14px;
+    height: 14px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 8px;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    right: 30px;
+}
+  a.more-items {
+    color: #d53d4c;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none !important;
+    margin-top: 20px !important;
+    display: flex;
+    margin-bottom: 30px;
+}
+.location-header p {
+    width: fit-content;
+    background: #d53d4c;
+    color: #fff;
+    padding: 5px;
+    border-radius: 30px;
+}
+.location-header p i:before{
+    color: #fff; 
 }
 /*================================= custom css start =================================*/
 
