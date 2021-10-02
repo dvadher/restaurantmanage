@@ -5,6 +5,26 @@ body {
 	font-size: 13px;
 	background-color: #fff;
 }
+::-webkit-scrollbar {
+    background: #f2f2f2; 
+    width: 5px;
+    border-radius: 10px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f2f2f2; 
+    width: 5px;
+    border-radius: 10px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handleon hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e1e1e1;
+  }
 p{
     margin-bottom:0;
 }
@@ -245,8 +265,8 @@ label {
     border-bottom: 0;
 }
 .search-result-header input{
-	font-size:12px;
-	color: #b3c0c1;
+    font-size: 12px;
+    color: rgb(0 0 0 / 52%);
 }
 .search-result-header input::-webkit-input-placeholder { /* Edge */
 	color: #151515;
@@ -314,7 +334,7 @@ span.label-slide {
 .item-listing .modal-content, .red-bg, .red-bg1{
 	background-color: #bc2c3d;	
 }
-.footer-content a:focus{
+.footer-content a:focus, a:hover{
     color:#bc2c3d !important;  
 }
 .item-listing .modal-footer{
@@ -635,8 +655,8 @@ span.cart-count {
     color: #fff;
     border-radius: 50%;
     position: absolute;
-    top: -2px;
-    right: 30px;
+    top: -4px;
+    right: -2px;
 }
   a.more-items {
     color: #d53d4c;
@@ -658,6 +678,10 @@ span.cart-count {
 }
 .location-header p i:before, .text-white, .cart price{
     color: #fff !important; 
+}
+.footer-content .btn-cart {
+    width: fit-content;
+    margin: 0 auto;
 }
 /*================================= custom css start =================================*/
 
